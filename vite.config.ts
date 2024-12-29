@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { nodePolyfills } from 'vite-plugin-node-polyfills';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 export default defineConfig({
   plugins: [
@@ -12,8 +12,8 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:5001', // Backend server
+      "/api": {
+        target: "https://betterclaim-backend.vercel.app/", // Backend server
         changeOrigin: true,
         secure: false,
       },
@@ -21,12 +21,12 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      crypto: 'crypto-browserify',
-      stream: 'stream-browserify',
-      buffer: 'buffer',
+      crypto: "crypto-browserify",
+      stream: "stream-browserify",
+      buffer: "buffer",
     },
   },
   define: {
-    global: 'globalThis',
+    global: "globalThis",
   },
 });
