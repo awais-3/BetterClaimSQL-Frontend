@@ -4,6 +4,8 @@ import { PublicKey, Transaction } from "@solana/web3.js";
 const API_URL = `${import.meta.env.VITE_API_URL}api/accounts`;
 //const API_URL = "http://localhost:5001/api/accounts"
 
+console.log(API_URL, "API_URL");
+
 // Data received by the server
 interface TransactionJSON {
   transaction: string;

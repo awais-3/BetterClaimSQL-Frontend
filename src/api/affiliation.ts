@@ -3,6 +3,7 @@ import { AffiliatedWallet } from "../interfaces/AffiliatedWallet";
 const API_URL = import.meta.env.VITE_API_URL;
 //const API_URL = "http://localhost:5001"
 
+console.log(API_URL, "API_URL");
 /* 
     Fetch server to obtain the referral code assigned to a certain wallet_address
 */

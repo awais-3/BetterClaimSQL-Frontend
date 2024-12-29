@@ -9,16 +9,16 @@ export default defineConfig({
       protocolImports: true,
     }),
   ],
-  server: {
-    port: 3000,
-    proxy: {
-      "/api": {
-        target: "https://betterclaim-backend.vercel.app/", // Backend server
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
+  // server: {
+  //   port: 3000,
+  //   proxy: {
+  //     "/api": {
+  //       target: "https://betterclaim-backend.vercel.app/", // Backend server
+  //       changeOrigin: true,
+  //       secure: false,
+  //     },
+  //   },
+  // },
   resolve: {
     alias: {
       crypto: "crypto-browserify",
